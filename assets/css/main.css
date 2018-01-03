@@ -24,3 +24,27 @@ header{
 
 
 }
+
+/*ESTILO INICIO.HTML*/
+.home, .mail {
+  font-size: 300%;
+  margin-top: 6%;
+}
+.user-photo {
+  width: 8vw;
+  border-radius: 50%;
+}
+.posted-photo {
+  background-image: url(../img/pig.jpg);
+  background-size: cover;
+  padding-bottom: ;
+}
+.post-photo {
+  width: 100%;
+}
+.pets {
+  font-size: 400%;
+  color: #A4A4A4;
+  float: right;
+  margin-top: 80%;
+}
