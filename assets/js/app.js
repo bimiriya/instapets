@@ -7,8 +7,9 @@ $(function(){
 $(document).ready(function(){
   $('.carousel').carousel();
 
+  $('.modal').modal();
+
   $('.pets').click(function(){
   	$('.pets').css("color", "red");
   });
 });
-

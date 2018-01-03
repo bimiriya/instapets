@@ -20,9 +20,31 @@ header{
   background-color: #F2F2F2;
 }
 
-.first-section{
+.sign{
+  padding-top: 20%;
+  padding-bottom: -30%;
+}
 
+#form{
+  background-color: #e68364;
+  margin-left: 30%;
+  height: 50px;
+  font-size: 20px;
+  padding-top: 5px;
+  margin-top: 20px;;
+}
 
+.img{
+  height: 100%;
+}
+
+#login{
+  background-color: #4CE0B3;
+  margin-left: 45%;
+  font-size: 20px;
+  height: 50px;
+  width: 15%;
+  padding-top: 5px;
 }
 
 /*ESTILO INICIO.HTML*/
