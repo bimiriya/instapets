@@ -1,0 +1,26 @@
+body{
+  margin: 0 auto;
+  background-color: #FAFAFA;
+}
+
+.logo{
+  font-size: 60px;
+  font-family: 'Lemon', cursive;
+  margin-top: 25%;
+  color: #e68364;
+}
+
+.paw{
+  width: 20%;
+}
+
+header{
+  font-family: 'Lemon', cursive;
+  color: #e68364;
+  background-color: #F2F2F2;
+}
+
+.first-section{
+
+
+}
