@@ -10,6 +10,13 @@ $(document).ready(function(){
   $('.modal').modal();
 
   $('.pets').click(function(){
-  	$('.pets').css("color", "red");
+  	$('.pets').css("color", "#FA5858");
+  });
+
+  $('#btn').click(function(){
+    var comment = $('#comment').val();
+    $('#comment').val("");
+    var cont = $('#cont');
+    cont.append('<div><p>' + comment + '</p></div>');
   });
 });

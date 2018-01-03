@@ -12,7 +12,7 @@
   </head>
   <body>
       <header>
-        <div class="row">
+        <div class="row valign-wrapper">
           <div class="col s2 m2 l2 center-align">
             <i class="material-icons home">home</i>
           </div>
@@ -25,7 +25,7 @@
         </div>
       </header>
 
-      <section>
+      <section class="publication">
         <div class="container">
           <div class="row valign-wrapper">
             <div class="col s1 m1 l1">
@@ -40,11 +40,20 @@
               <i class="material-icons pets">pets</i>
             </div>
           </div>
-          <!--<div class="row icon-pets">
-            <div class="col s1 offset-s11 m1 offset-m11 l1 offset-l11">
-              <i class="material-icons pets">pets</i>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <p class="photo-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptatibus, nulla nobis. Ipsa maiores repellat distinctio vero quo, natus temporibus.</p>
             </div>
-          </div>-->
+          </div>         
+        </div>
+      </section>
+
+      <section class="comments">
+        <div class="container">
+          <textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
+          <button type="submit" id="btn">Comenta</button>
+          <!-- contenedor comentarios -->
+          <div id="cont"></div>
         </div>
       </section>
 
