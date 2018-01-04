@@ -106,3 +106,7 @@ a i {
 .galery{
   border-top: 1px solid lightgrey;
 }
+
+.photo-galery{
+  width: 100%;
+}

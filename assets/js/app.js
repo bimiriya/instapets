@@ -4,12 +4,15 @@ $(document).ready(function(){
        $('#splash').fadeOut(500);
     }, 4000);
  });
- 
+
   $('.carousel').carousel();
 
   $('.modal').modal();
 
-  
+
+  $('.materialboxed').materialbox();
+
+
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       $(location).attr("href","inicio.html");
@@ -24,7 +27,7 @@ $(document).ready(function(){
       if (email != "" && pw != "") {
         var promise = firebase.auth().signInWithEmailAndPassword(email,pw);
         promise.catch(e => alert(e.message))
-      }     
+      }
   })
 
   $("#signup-btn").click(function() {
