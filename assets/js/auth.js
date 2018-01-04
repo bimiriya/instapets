@@ -32,11 +32,6 @@ $('#btn').click(function(){
 });
 
 $('#modal2').modal();
-
-
-
- //var source = $('#photo-source').val();
-
  
   //check if browser supports file api and filereader features
 if (window.File && window.FileReader && window.FileList && window.Blob) {
@@ -102,10 +97,6 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
 
 }
 
-  //$('#photo-new').attr("src", source);
- 
-
-        
             
             
           
