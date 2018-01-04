@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <title>Instapet</title>
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="row valign-wrapper">
+        <div class="col s2 m2 l2 center-align">
+          <i class="material-icons home">home</i>
+        </div>
+        <div class="col s6 m6 l6 center-align">
+          <h4>Instapets</h4>
+        </div>
+        <div class="col s2 m2 l2 center-align">
+          <i class="material-icons mail">mail</i>
+        </div>
+        <div class="col s2 m2 l2 center-align">
+          <i class="material-icons mail" id="logout">power_settings_new</i>
+        </div>
+      </div>
+    </header>
+
+    <section class="notifications">
+      <div class="container">
+        <div class="row valign-wrapper">
+          <div class="col s1 m1 l1">
+            <img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle">
+          </div>
+          <div class="col s9 m9 l9">
+            <p> a <strong>Juanito Pérez</strong> le ha gustado tu publicación</p>
+          </div>
+          <div class="col s2 m2 l2">
+            <img class="notice-img" src="assets/img/pig.jpg" alt="">
+          </div>
+        </div>
+        <div class="row valign-wrapper">
+          <div class="col s1 m1 l1">
+            <img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle">
+          </div>
+          <div class="col s9 m9 l9">
+            <p> a <strong>Guachimingo</strong> le ha gustado tu publicación</p>
+          </div>
+          <div class="col s2 m2 l2">
+            <img class="notice-img" src="assets/img/milli.jpg" alt="">
+          </div>
+        </div>
+        <div class="row valign-wrapper">
+          <div class="col s1 m1 l1">
+            <img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle">
+          </div>
+          <div class="col s9 m9 l9">
+            <p> a <strong>María Ignacia</strong> le ha gustado tu publicación</p>
+          </div>
+          <div class="col s2 m2 l2">
+            <img class="notice-img" src="assets/img/milo.jpg" alt="">
+          </div>
+        </div>
+        <div class="row valign-wrapper">
+          <div class="col s1 m1 l1">
+            <img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle">
+          </div>
+          <div class="col s9 m9 l9">
+            <p> a <strong>Wachuleru</strong> le ha gustado tu publicación</p>
+          </div>
+          <div class="col s2 m2 l2">
+            <img class="notice-img" src="assets/img/puss.jpg" alt="">
+          </div>
+        </div>
+        <div class="row valign-wrapper">
+          <div class="col s1 m1 l1">
+            <img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle">
+          </div>
+          <div class="col s9 m9 l9">
+            <p> a <strong>USER-NAME</strong> le ha gustado tu publicación</p>
+          </div>
+          <div class="col s2 m2 l2">
+            <img class="notice-img" src="assets/img/suga.jpg" alt="">
+          </div>
+        </div>
+        <div class="row valign-wrapper">
+          <div class="col s1 m1 l1">
+            <img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle">
+          </div>
+          <div class="col s9 m9 l9">
+            <p> a <strong>USER-NAME</strong> le ha gustado tu publicación</p>
+          </div>
+          <div class="col s2 m2 l2">
+            <img class="notice-img" src="assets/img/gatosflojos.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <a class="grey-text text-lighten-3" href="inicio.html"><i class="material-icons home">pets</i></a>
+              <a class="grey-text text-lighten-3" href="#!"><i class="material-icons home">search</i></a>
+              <a class="grey-text text-lighten-3 modal-trigger" href="#modal2"><i class="material-icons home">add_a_photo</i></a>
+              <div id="modal2" class="modal modal-fixed-footer">
+                <div class="modal-content upload-photo">
+                  <h4>Sube una foto</h4>
+                  <form action="#">
+                    <div class="file-field input-field">
+                      <div class="btn">
+                        <i class="material-icons home">image</i>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
+                    </div>
+                  </form>
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="textarea1" class="materialize-textarea"></textarea>
+                          <label for="textarea1">Escribe un comentario</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="agree">Agree</a>
+                </div>
+              </div>
+              <a class="grey-text text-lighten-3" href="notifications.html"><i class="material-icons home">favorite</i></a>
+              <a class="grey-text text-lighten-3" href="profile.html"><i class="material-icons home">person</i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/auth.js"></script>
+  </body>
+</html>

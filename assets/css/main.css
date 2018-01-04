@@ -87,3 +87,22 @@ a i {
   background: white;
   width: 100%;
 }
+
+/*ESTILO NOTIFICACIONES*/
+.notifications{
+  margin-top: 20px;
+}
+
+.notice-img{
+  width: 100%;
+  height: 100%;
+}
+
+/*ESTILO PERFIL*/
+.profile-info{
+  margin-top: 20px;
+}
+
+.galery{
+  border-top: 1px solid lightgrey;
+}
