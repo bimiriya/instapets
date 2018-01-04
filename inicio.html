@@ -16,11 +16,14 @@
           <div class="col s2 m2 l2 center-align">
             <i class="material-icons home">home</i>
           </div>
-          <div class="col s8 m8 l8 center-align">
+          <div class="col s6 m6 l6 center-align">
             <h4>Instapets</h4>
           </div>
           <div class="col s2 m2 l2 center-align">
             <i class="material-icons mail">mail</i>
+          </div>
+          <div class="col s2 m2 l2 center-align">
+            <i class="material-icons mail">power_settings_new</i>
           </div>
         </div>
       </header>
@@ -29,33 +32,89 @@
         <div class="container">
           <div class="row valign-wrapper">
             <div class="col s1 m1 l1">
-              <img src="assets/img/logo.png" alt="user-photo" class="user-photo">
+              <img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle">
             </div>
             <div class="col s11 m11 l11">
               <p><strong>USER-NAME</strong></p>
             </div>
           </div>
-          <div class="row posted-photo">
-            <div class="col s12 m12 l12">
-              <i class="material-icons pets">pets</i>
-            </div>
-          </div>
           <div class="row">
             <div class="col s12 m12 l12">
-              <p class="photo-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptatibus, nulla nobis. Ipsa maiores repellat distinctio vero quo, natus temporibus.</p>
+              <div class="card">
+                <div class="card-image">
+                  <img src="assets/img/pig.jpg">
+                  <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons pets">pets</i></a>
+                </div>
+                <div class="card-content photo-comment">
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+              </div>
             </div>
-          </div>         
+          </div>        
         </div>
       </section>
 
       <section class="comments">
         <div class="container">
-          <textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
-          <button type="submit" id="btn">Comenta</button>
           <!-- contenedor comentarios -->
-          <div id="cont"></div>
+          <div id="comment-cont"></div>
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <img src="assets/img/golfo.jpg" alt="" class="circle">
+              <textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
+              <a class="waves-effect waves-teal btn" id="btn">Submit</a>
+              <!--<button type="submit" id="btn">Submit</button>-->
+            </li>
+          </ul>          
         </div>
       </section>
+
+      <section class="new-post">
+        <div class="container" id="new-photo"></div>
+      </section>
+
+      <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <a class="grey-text text-lighten-3" href="inicio.html"><i class="material-icons home">pets</i></a>
+                <a class="grey-text text-lighten-3" href="#!"><i class="material-icons home">search</i></a>
+                <a class="grey-text text-lighten-3 modal-trigger" href="#modal2"><i class="material-icons home">add_a_photo</i></a>
+                <div id="modal2" class="modal modal-fixed-footer">
+                  <div class="modal-content upload-photo">
+                    <h4>Sube una foto</h4>
+                    <form action="#">
+                      <div class="file-field input-field">
+                        <div class="btn">
+                          <i class="material-icons home">image</i>
+                          <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                          <input class="file-path validate" type="text">
+                        </div>
+                      </div>
+                    </form>
+                    <div class="row">
+                      <form class="col s12">
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Escribe un comentario</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="agree">Agree</a>
+                  </div>
+                </div>              
+                <a class="grey-text text-lighten-3" href="#!"><i class="material-icons home">favorite</i></a>               
+                <a class="grey-text text-lighten-3" href="#!"><i class="material-icons home">person</i></a>               
+              </div>
+            </div>
+          </div>
+        </footer>
 
       
 

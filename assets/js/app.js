@@ -16,7 +16,11 @@ $(document).ready(function(){
   $('#btn').click(function(){
     var comment = $('#comment').val();
     $('#comment').val("");
-    var cont = $('#cont');
-    cont.append('<div><p>' + comment + '</p></div>');
+    var cont = $('#comment-cont');
+    cont.append('<div class="chip comment-bubble"><img src="assets/img/golfo.jpg" alt="Contact Person">' + comment + '</div>')
   });
+
+  $('#modal2').modal();
 });
+
+  
