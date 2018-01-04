@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-<!--    <div class="container">
+      <div id="splash">
+    <div class="container">
       <div class="row">
         <div class="col s12 center-align">
-          <div id="splash">
+          
             <h2 class="logo">Instapets</h2>
             <img class="paw" src="assets/img/logo.png" alt="">
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
       <header>
         <div class="row">
@@ -65,25 +66,25 @@
                         <label for="first_name">Nombre</label>
                       </div>
                       <div class="input-field col s6 m6 l6">
-                        <input id="last_name" type="text" class="validate">
+                        <input id="signup-username" type="text" class="validate">
                         <label for="last_name">Apellido</label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12 m12 l12">
-                        <input id="password" type="password" class="validate">
+                        <input id="signup-pw" type="password" class="validate">
                         <label for="password">Contraseña</label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12 m12 l12">
-                        <input id="email" type="email" class="validate">
+                        <input id="signup-email" type="email" class="validate">
                         <label for="email">Email</label>
                       </div>
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Unirse</a>
+                    <a href="#!" id="signup-btn" class="modal-action modal-close waves-effect waves-green btn-flat ">Unirse</a>
                   </div>
                 </div>
               </div>
@@ -101,25 +102,39 @@
               <div class="modal-content">
                 <div class="row">
                   <div class="input-field col s12 m12 l12">
-                    <input  id="first_name" type="text" class="validate">
-                    <label for="first_name">Nombre de usuario</label>
+                    <input  id="login-email" type="text" class="validate">
+                    <label for="first_name">Email</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12 m12 l12">
-                    <input id="password" type="password" class="validate">
+                    <input id="login-pw" type="password" class="validate">
                     <label for="password">Contraseña</label>
                   </div>
                 </div>
               </div>
               <div class="modal-footer">
-                <a href="inicio.html" class="modal-action modal-close waves-effect waves-green btn-flat">Iniciar sesión</a>
+                <a href="#!" id="login-btn" class="modal-action modal-close waves-effect waves-green btn-flat">Iniciar sesión</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBULmuoRTSxOzTk453bgI6gkhr3H6BZzto",
+          authDomain: "instapet-dd1be.firebaseapp.com",
+          databaseURL: "https://instapet-dd1be.firebaseio.com",
+          projectId: "instapet-dd1be",
+          storageBucket: "instapet-dd1be.appspot.com",
+          messagingSenderId: "395076515506"
+        };
+        firebase.initializeApp(config);
+      </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>

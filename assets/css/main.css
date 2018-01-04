@@ -39,7 +39,8 @@ header{
   margin-top: 20px;;
 }
 
-.img{
+img {
+  object-fit: cover;
   height: 100%;
 }
 
@@ -77,4 +78,12 @@ a i {
 }
 .upload-photo {
   color: black;
+}
+
+#splash {
+  height: 100vh;
+  position: absolute;
+  z-index: 7;
+  background: white;
+  width: 100%;
 }
