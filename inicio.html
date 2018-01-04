@@ -52,25 +52,22 @@
             </div>
           </div>        
         </div>
+        <div class="comments">
+          <div class="container">
+            <!-- contenedor comentarios -->
+            <div id="comment-cont"></div>
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <img src="assets/img/golfo.jpg" alt="" class="circle">
+                <textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
+                <a class="waves-effect waves-teal btn" id="btn">Submit</a>
+              </li>
+            </ul>          
+          </div>
       </section>
 
-      <section class="comments">
-        <div class="container">
-          <!-- contenedor comentarios -->
-          <div id="comment-cont"></div>
-          <ul class="collection">
-            <li class="collection-item avatar">
-              <img src="assets/img/golfo.jpg" alt="" class="circle">
-              <textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
-              <a class="waves-effect waves-teal btn" id="btn">Submit</a>
-              <!--<button type="submit" id="btn">Submit</button>-->
-            </li>
-          </ul>          
-        </div>
-      </section>
-
-      <section class="new-post">
-        <div class="container" id="new-photo"></div>
+      <section id="new-post">
+        
       </section>
 
       <footer class="page-footer">
@@ -90,7 +87,7 @@
                           <input type="file">
                         </div>
                         <div class="file-path-wrapper">
-                          <input class="file-path validate" type="text">
+                          <input class="file-path validate" id="photo-source" type="text">
                         </div>
                       </div>
                     </form>
