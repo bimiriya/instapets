@@ -55,7 +55,7 @@ img {
   font-size: 300%;
   margin-top: 6%;
 }
-.home2 {
+.menu {
   color: #e68364;
 }
 .posted-photo {
@@ -87,8 +87,10 @@ a i {
   background: white;
   width: 100%;
 }
-
-#logout {
+.gif-splash {
+  width: 20%;
+}
+.logout {
   cursor: pointer;
 }
 
