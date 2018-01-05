@@ -127,3 +127,14 @@ a i {
 #accounts {
   text-align: center;
 }
+
+.fixed-foo {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 9;
+}
+
+#new-post {
+  padding-bottom: 3em;
+}

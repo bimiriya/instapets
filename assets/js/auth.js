@@ -21,10 +21,11 @@ $(document).ready(function() {
       //recuperación de data desde firebase
       var rootRef = firebase.database().ref().child("posts");
       rootRef.on("child_added", snap => {
+          var the_name = snap.child("username").val();
           var the_caption = snap.child("captions").val();
           var the_img = snap.child("img").val();
 
-          $("#new-post").prepend('<div class="container"><div class="row valign-wrapper"><div class="col s1 m1 l1"><img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle"></div><div class="col s11 m11 l11"><p><strong>USER-NAME</strong></p></div></div><div class="row"><div class="col s12 m12 l12"><div class="card"><div id="funciona" class="card-image"><img src="'+ the_img +'" id="photo-new"><a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons pets">pets</i></a></div><div class="card-content photo-comment"><p>' 
+          $("#new-post").prepend('<div class="container"><div class="row valign-wrapper"><div class="col s1 m1 l1"><img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle"></div><div class="col s11 m11 l11"><p><strong>"' + the_name + '"</strong></p></div></div><div class="row"><div class="col s12 m12 l12"><div class="card"><div id="funciona" class="card-image"><img src="'+ the_img +'" id="photo-new"><a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons pets">pets</i></a></div><div class="card-content photo-comment"><p>' 
           + the_caption + '</p></div></div></div></div></div><div class="comments"><div class="container"><div id="comment-cont2"></div><ul class="collection"><li class="collection-item avatar"><img src="assets/img/golfo.jpg" alt="" class="circle"><textarea class="txt" id="comment2" placeholder="Añade un comentario..."></textarea><a class="waves-effect waves-teal btn" id="btn2">Submit</a></li></ul></div></div>')
       })
 
@@ -59,10 +60,14 @@ $(document).ready(function() {
                 the_url = event.target.result //ruta de la imagen
 
             //para guardar la data con firebase
+            var user = firebase.auth().currentUser;
+            var atPos = user.email.indexOf("@");
+            var userReady = user.email.slice(0,atPos);
             var caption = $('#textarea1').val();
             var firebaseRef = firebase.database().ref('posts/').push().set({
                 captions: $('#textarea1').val(),
-                img: event.target.result
+                img: event.target.result,
+                username: userReady
             });
 
      $('#textarea1').val("");
