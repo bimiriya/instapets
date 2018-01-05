@@ -25,9 +25,25 @@ $(document).ready(function() {
           var the_caption = snap.child("captions").val();
           var the_img = snap.child("img").val();
 
-          $("#new-post").prepend('<div class="container"><div class="row valign-wrapper"><div class="col s1 m1 l1"><img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle"></div><div class="col s11 m11 l11"><p><strong>"' + the_name + '"</strong></p></div></div><div class="row"><div class="col s12 m12 l12"><div class="card"><div id="funciona" class="card-image"><img src="'+ the_img +'" id="photo-new"><a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons pets">pets</i></a></div><div class="card-content photo-comment"><p>' 
-          + the_caption + '</p></div></div></div></div></div><div class="comments"><div class="container"><div id="comment-cont2"></div><ul class="collection"><li class="collection-item avatar"><img src="assets/img/golfo.jpg" alt="" class="circle"><textarea class="txt" id="comment2" placeholder="Añade un comentario..."></textarea><a class="waves-effect waves-teal btn" id="btn2">Submit</a></li></ul></div></div>')
-      })
+          $("#new-post").prepend('<div class="container"><div class="row valign-wrapper"><div class="col s1 m1 l1"><img src="assets/img/logo.png" alt="user-photo" class="user-photo responsive-img circle"></div><div id="follow-cont" class="col s11 m11 l11"><h5><strong>"' + the_name + '"</strong></h5><a id="follow" class="waves-effect waves-light btn" href="#modal2">FOLLOW</a></a></div></div><div class="row"><div class="col s12 m12 l12"><div class="card"><div id="funciona" class="card-image"><img src="'+ the_img +'" id="photo-new"><a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons pets">pets</i></a></div><div class="card-content photo-comment"><p>' 
+          + the_caption + '</p></div></div></div></div></div><div class="comments"><div class="container"><div class="comment-cont2"></div><ul class="collection"><li class="collection-item avatar"><img src="assets/img/golfo.jpg" alt="" class="circle"><textarea class="txt comment2" placeholder="Añade un comentario..."></textarea><a class="waves-effect waves-teal btn btn2">Submit</a></li></ul></div></div>')
+          $('.pets').click(function(){
+            $(this).css("color", "#FA5858");
+            $(this).click(function() {
+                $(this).css("color","white")
+            })
+          });
+          $('.btn2').click(function(){
+          var comm = $('.comment2').val();
+          if (comm !== '') {
+          $('.comment2').val("");
+          var contMessage = $('.comment-cont2');
+          contMessage.append('<div class="chip comment-bubble"><img src="assets/img/golfo.jpg" alt="Contact Person">' + comm + '</div>')
+          } else {
+            $(this).attr('disable', 'disable');
+          }
+          });
+        })
 
 
       $(".logout").click(function() {
@@ -71,8 +87,12 @@ $(document).ready(function() {
             });
 
      $('#textarea1').val("");
+     
       $('.pets').click(function(){
         $(this).css("color", "#FA5858");
+        $(this).click(function() {
+            $(this).css("color","white")
+        })
       });
       $('#btn2').click(function(){
       var comm = $('#comment2').val();
@@ -109,4 +129,5 @@ $(document).ready(function() {
       $(".button-collapse").sideNav();
       // Initialize collapsible (uncomment the line below if you use the dropdown variation)
       //$('.collapsible').collapsible();
+      
   });

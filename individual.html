@@ -122,48 +122,58 @@
     </section>
 
 
-    <footer class="page-footer hide-on-large-only">
+    <footer class="fixed-foo page-footer hide-on-large-only">
         <div class="container">
           <div class="row">
-            <div class="col s12 m12 l12">
+            <div class="col s2 m2">
               <a class="grey-text text-lighten-3" href="inicio.html"><i class="material-icons home">pets</i></a>
-              <a class="grey-text text-lighten-3" href="#!"><i class="material-icons home">search</i></a>
-              <a class="grey-text text-lighten-3 modal-trigger" href="#modal2"><i class="material-icons home">add_a_photo</i></a>
-              <div id="modal2" class="modal modal-fixed-footer">
-                <div class="modal-content upload-photo">
-                  <h4>Sube una foto</h4>
-                  <form action="#">
-                    <div class="file-field input-field">
-                      <div class="btn">
-                        <i class="material-icons home">image</i>
-                        <input type="file">
-                      </div>
-                      <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text">
-                      </div>
-                    </div>
-                  </form>
-                  <div class="row">
-                    <form class="col s12">
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <textarea id="textarea1" class="materialize-textarea"></textarea>
-                          <label for="textarea1">Escribe un comentario</label>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="agree">Agree</a>
-                </div>
-              </div>
-              <a class="grey-text text-lighten-3" href="notifications.html"><i class="material-icons home">favorite</i></a>
-              <a class="grey-text text-lighten-3" href="#!"><i class="material-icons home">person</i></a>
             </div>
+             <div class="col s3 m3 l3 xl3 center-align">
+                <a class="grey-text text-lighten-3" href="#!"><i class="material-icons home">search</i></a>
+             </div>
+            <div class="col s2 m2">
+              <a class="grey-text text-lighten-3 modal-trigger" href="#modal2"><i class="material-icons home">add_a_photo</i></a>
+            </div>
+            <div class="col s3 m3 center-align">
+                <a class="grey-text text-lighten-3" href="notifications.html"><i class="material-icons home">favorite</i></a>
+            </div>
+            <div class="col s2 m2">
+                <a class="grey-text text-lighten-3" href="profile.html"><i class="material-icons home">person</i></a>
+            </div>
+            
           </div>
         </div>
       </footer>
+
+      <div id="modal2" class="modal modal-fixed-footer">
+          <div class="modal-content upload-photo">
+            <h4>Sube una foto</h4>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Escribe un comentario</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <form action="#">
+              <div class="file-field input-field">
+                <div class="btn">
+                  <i class="material-icons home">image</i>
+                  <input type="file" id="photo-source">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="agree">Listo</a>
+          </div>
+        </div>
 
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

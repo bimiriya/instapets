@@ -90,9 +90,6 @@ a i {
 .gif-splash {
   width: 20%;
 }
-.logout {
-  cursor: pointer;
-}
 
 /*ESTILO NOTIFICACIONES*/
 .notifications{
@@ -134,9 +131,35 @@ a i {
   position: fixed;
   width: 100%;
   bottom: 0;
+  height: 10vh;
   z-index: 9;
+  padding-top: 10px;
 }
 
 #new-post {
-  padding-bottom: 3em;
+  padding-bottom: 5em;
+  padding-top: 6em;
+}
+
+#new-post h5 {
+  cursor: pointer;
+}
+
+.logout {
+  cursor: pointer;
+}
+
+.home {
+  cursor: pointer;
+}
+
+.fixed-head {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  height: 10vh;
+}
+
+.pointer, header h4, .profile-info img {
+  cursor: pointer;
 }
