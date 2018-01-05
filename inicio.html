@@ -11,22 +11,51 @@
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-      <header>
-        <div class="row valign-wrapper">
-          <div class="col s2 m2 l2 center-align">
-            <i class="material-icons home">home</i>
-          </div>
-          <div class="col s6 m6 l6 center-align">
-            <h4>Instapets</h4>
-          </div>
-          <div class="col s2 m2 l2 center-align">
-            <i class="material-icons mail">mail</i>
-          </div>
-          <div class="col s2 m2 l2 center-align">
-            <i class="material-icons mail" id="logout">power_settings_new</i>
-          </div>
+      <header class="hide-on-large-only">
+      <div class="row valign-wrapper">
+        <div class="col s2 m2 l2 center-align">
+          <i class="material-icons home">home</i>
         </div>
-      </header>
+        <div class="col s6 m6 l6 center-align">
+          <h4>Instapets</h4>
+        </div>
+        <div class="col s2 m2 l2 center-align">
+          <i class="material-icons mail">mail</i>
+        </div>
+        <div class="col s2 m2 l2 center-align">
+          <i class="material-icons mail logout">power_settings_new</i>
+        </div>
+      </div>
+    </header>
+
+    <header class="hide-on-med-and-down">
+      <div class="row valign-wrapper">
+        <div class="col s2 m2 l2 center-align">
+          <ul id="slide-out" class="side-nav">
+            <li><div class="user-view">
+              <div class="background">
+                <img src="assets/img/background.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="assets/img/golfo.jpg"></a>
+              <a href="#!name"><span class="white-text name">USER-NAME</span></a>
+              <a href="#!email"><span class="white-text email">user-name@gmail.com</span></a>
+            </div></li>
+            <li><a href="inicio.html"><i class="material-icons">pets</i>INICIO</a></li>
+            <li><a href="notifications.html"><i class="material-icons">favorite</i>Notificaciones</a></li>
+            <li><a href="profile.html"><i class="material-icons">person</i>Perfil</a></li>
+            <li><div class="divider"></div></li>
+            <li class="logout"><a class="waves-effect" href="#!"><i class="material-icons">power_settings_new</i>Cerrar Sesión</a></li>
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons home home2">home</i></a>
+        </div>
+        <div class="col s8 m8 l8 center-align">
+          <h4>Instapets</h4>
+        </div>
+        <div class="col s2 m2 l2 center-align">
+          <i class="material-icons mail">mail</i>
+        </div>
+      </div>
+    </header>      
 
       <section class="publication">
         <div class="container">
@@ -70,7 +99,7 @@
 
       </section>
 
-      <footer class="page-footer">
+      <footer class="page-footer hide-on-large-only">
           <div class="container">
             <div class="row">
               <div class="col s12 m12 l12">
@@ -80,6 +109,16 @@
                 <div id="modal2" class="modal modal-fixed-footer">
                   <div class="modal-content upload-photo">
                     <h4>Sube una foto</h4>
+                    <div class="row">
+                      <form class="col s12">
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Escribe un comentario</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                     <form action="#">
                       <div class="file-field input-field">
                         <div class="btn">
@@ -91,19 +130,9 @@
                         </div>
                       </div>
                     </form>
-                    <div class="row">
-                      <form class="col s12">
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <textarea id="textarea1" class="materialize-textarea"></textarea>
-                            <label for="textarea1">Escribe un comentario</label>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
                   </div>
                   <div class="modal-footer">
-                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="agree">Agree</a>
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="agree">Listo</a>
                   </div>
                 </div>
                 <a class="grey-text text-lighten-3" href="notifications.html"><i class="material-icons home">favorite</i></a>

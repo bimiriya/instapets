@@ -53,10 +53,13 @@ img {
   padding-top: 5px;
 }
 
-/*ESTILO INICIO.HTML*/
+/*ESTILO INICIO*/
 .home, .mail {
   font-size: 300%;
   margin-top: 6%;
+}
+.home2 {
+  color: #e68364;
 }
 .posted-photo {
   background-image: url(../img/pig.jpg);

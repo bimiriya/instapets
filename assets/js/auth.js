@@ -16,7 +16,7 @@ var config = {
     }
   });
 
-  $("#logout").click(function() {
+  $(".logout").click(function() {
     firebase.auth().signOut();
 })
 
@@ -26,9 +26,13 @@ $('.pets').click(function(){
 
 $('#btn').click(function(){
   var comment = $('#comment').val();
+  if (comment !== '') {
   $('#comment').val("");
   var cont = $('#comment-cont');
   cont.append('<div class="chip comment-bubble"><img src="assets/img/golfo.jpg" alt="Contact Person">' + comment + '</div>')
+  } else {
+    $('#btn').attr('disable', 'disable');
+  }
 });
 
 $('#modal2').modal();
@@ -68,11 +72,14 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
   });
   $('#btn2').click(function(){
   var comm = $('#comment2').val();
+  if (comm !== '') {
   $('#comment2').val("");
   var contMessage = $('#comment-cont2');
   contMessage.append('<div class="chip comment-bubble"><img src="assets/img/golfo.jpg" alt="Contact Person">' + comm + '</div>')
+  } else {
+    $('#btn2').attr('disable', 'disable');
+  }
   });
-
 }
     
     //when the file is read it triggers the onload event above.
@@ -96,7 +103,10 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
   alert('The File APIs are not fully supported in this browser.');
 
 }
-
+// Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
             
             
           
