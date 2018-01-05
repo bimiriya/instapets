@@ -25,6 +25,11 @@ header{
   background-color: #F2F2F2;
 }
 
+.fixed {
+  position: fixed;
+  width: 100%;
+}
+
 .sign{
   padding-top: 20%;
   padding-bottom: -30%;
@@ -32,11 +37,7 @@ header{
 
 #form{
   background-color: #e68364;
-  margin-left: 30%;
-  height: 50px;
   font-size: 20px;
-  padding-top: 5px;
-  margin-top: 20px;;
 }
 
 img {
@@ -44,13 +45,9 @@ img {
   height: 100%;
 }
 
-#login{
+.login{
   background-color: #4CE0B3;
-  margin-left: 45%;
   font-size: 20px;
-  height: 50px;
-  width: 15%;
-  padding-top: 5px;
 }
 
 /*ESTILO INICIO*/
@@ -91,6 +88,10 @@ a i {
   width: 100%;
 }
 
+#logout {
+  cursor: pointer;
+}
+
 /*ESTILO NOTIFICACIONES*/
 .notifications{
   margin-top: 20px;
@@ -112,4 +113,17 @@ a i {
 
 .photo-galery{
   width: 100%;
+}
+
+.carousel img {
+  border-radius: 10px;
+}
+
+.first-section {
+  height: 100vh;
+  margin: 0;
+}
+
+#accounts {
+  text-align: center;
 }
