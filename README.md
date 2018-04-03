@@ -1,7 +1,7 @@
 # Instapets
 A simple web app inspired off instagram for animal lovers and their pets
 
-![sample](https://drive.google.com/file/d/1pjN_BX1agWl_7J_gLbt4paPwEaZmyI9j/view)
+![sample3](https://user-images.githubusercontent.com/32300763/38247566-2a9aac74-371c-11e8-8072-f4ccf1702103.png)
 
 ## Hosting
 
